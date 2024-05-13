@@ -7,7 +7,7 @@ spring:
       server:
         git:
           uri: https://github.com/cesarAncco/ProjectBank.git
-          searchPaths: config.data
+          searchPaths: configdata
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
   security:
