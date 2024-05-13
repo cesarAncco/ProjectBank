@@ -1,0 +1,27 @@
+server:
+  port: 8085
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  application:
+    name: client
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:8090/postgres
+    username: postgres
+    password: pass1234
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
