@@ -5,8 +5,6 @@ server:
     include-binding-errors: always
 
 spring:
-  application:
-    name: client
   datasource:
     platform: postgres
     driver-class-name: org.postgresql.Driver
