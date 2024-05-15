@@ -8,14 +8,14 @@ spring:
   datasource:
     platform: postgres
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:8090/clients
+    url: jdbc:postgresql://localhost:8090/postgres
     username: postgres
     password: pass1234
   jpa:
     database: POSTGRESQL
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
       dialect: org.hibernate.dialect.PostgreSQLDialect
 
 management:
