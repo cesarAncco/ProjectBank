@@ -13,14 +13,15 @@ import javax.validation.constraints.Pattern;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ClientRequest {
-    @NotBlank(message = "Debe ingresar un nombre")
+    @NotBlank(message = "The name must not be empty")
     private String name;
 
-    @NotBlank(message = "Debe ingresar un apellido")
+    @NotBlank(message = "The last name must not be empty")
     private String lastname;
     private String typeDocument;
 
-    @Pattern(regexp = "^\\d{8}$", message = "Ingrese un documento valido")
+    @NotBlank(message = "The document must not be empty")
+    @Pattern(regexp = "^\\d{8}$", message = "Enter a valid document")
     private String document;
     private String typeClient;
 }
