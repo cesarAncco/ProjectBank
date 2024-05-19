@@ -13,9 +13,6 @@ public class ExceptionHandler {
     public ResponseEntity<ClientResponse> handleException(MethodArgumentNotValidException exception){
         return new ResponseEntity<>(ClientResponse.builder()
                 .code("400")
-                //Mensaje de error personalizado
-                //.message("Dato Erroneo")
-                //Mensaje de error personalizado con el CustomerRequest
                 .message(exception.getBindingResult().getFieldErrors().get(0).getDefaultMessage())
                 .build(), HttpStatus.BAD_REQUEST);
 

@@ -17,15 +17,19 @@ public class ClientEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name="name", nullable=false, length=255)
     private String name;
 
-    @JoinColumn(name = "last_name")
-    private String lastname;
+    @Column(name = "lastname", nullable=false, length=255)
+    private String lastName;
 
     //@ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @JoinColumn(name = "type_document")
     private String typeDocument;
+
+    @Column(name="document", nullable=false, length=30)
     private String document;
 
     //@ManyToOne(fetch = FetchType.LAZY)
