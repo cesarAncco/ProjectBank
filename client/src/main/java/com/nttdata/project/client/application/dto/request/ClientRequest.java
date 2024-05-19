@@ -1,17 +1,18 @@
 package com.nttdata.project.client.application.dto.request;
 
+import com.nttdata.project.client.application.dto.validation.DocumentValidation;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@DocumentValidation
 public class ClientRequest {
     @NotBlank(message = "The name must not be empty")
     private String name;
@@ -21,7 +22,6 @@ public class ClientRequest {
     private String typeDocument;
 
     @NotBlank(message = "The document must not be empty")
-    @Pattern(regexp = "^\\d{8}$", message = "Enter a valid document")
     private String document;
     private String typeClient;
 }

@@ -3,7 +3,6 @@ package com.nttdata.project.client.application.dto.request;
 import lombok.*;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
 
 @Getter
 @Setter
@@ -19,7 +18,6 @@ public class ClientRequestUpdate {
     private String typeDocument;
 
     @NotBlank(message = "The document must not be empty")
-    @Pattern(regexp = "^\\d{8}$", message = "Enter a valid document")
     private String document;
     private String typeClient;
 }

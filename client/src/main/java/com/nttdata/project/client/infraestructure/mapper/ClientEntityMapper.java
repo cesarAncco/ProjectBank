@@ -16,9 +16,9 @@ public interface ClientEntityMapper {
     @Mapping(target = "id", source = "id")
     @Mapping(target = "name", source = "name")
     @Mapping(target = "lastName", source = "lastName")
-    @Mapping(target = "typeDocument", source = "typeDocument")
+    @Mapping(target = "typeDocument", source = "typeDocument.documentName")
     @Mapping(target = "document", source = "document")
-    @Mapping(target = "typeClient", source = "typeClient")
+    @Mapping(target = "typeClient", source = "typeClient.clientTypeName")
     Client mapToClient(ClientEntity clientEntity);
 
     List<Client> mapToClient(List<ClientEntity> clientEntities);
@@ -26,8 +26,8 @@ public interface ClientEntityMapper {
     @Mapping(target = "id", source = "id")
     @Mapping(target = "name", source = "name")
     @Mapping(target = "lastName", source = "lastName")
-    @Mapping(target = "typeDocument", source = "typeDocument")
+    @Mapping(target = "typeDocument.id", source = "typeDocument")
     @Mapping(target = "document", source = "document")
-    @Mapping(target = "typeClient", source = "typeClient")
+    @Mapping(target = "typeClient.id", source = "typeClient")
     ClientEntity mapToClientEntity(Client client);
 }

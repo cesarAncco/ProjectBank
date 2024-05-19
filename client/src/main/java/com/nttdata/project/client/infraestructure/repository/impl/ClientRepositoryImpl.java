@@ -33,6 +33,8 @@ public class ClientRepositoryImpl implements ClientRepository {
 
     @Override
     public Client updateClient(Client client) {
+        ClientEntity clientEntity = clientRepositoryJPA.findById(client.getId())
+                .orElseThrow(() -> new NoSuchElementException("Client not found."));
         return ClientEntityMapper.INSTANCE.mapToClient((
                 clientRepositoryJPA.save(ClientEntityMapper.INSTANCE.mapToClientEntity(client))
         ));

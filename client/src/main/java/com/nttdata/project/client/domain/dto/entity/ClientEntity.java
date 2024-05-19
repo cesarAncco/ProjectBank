@@ -24,16 +24,16 @@ public class ClientEntity {
     @Column(name = "lastname", nullable=false, length=255)
     private String lastName;
 
-    //@ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @JoinColumn(name = "type_document")
-    private String typeDocument;
+    private DocumentTypeEntity typeDocument;
 
     @Column(name="document", nullable=false, length=30)
     private String document;
 
-    //@ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @JoinColumn(name = "type_client")
-    private String typeClient;
+    private ClientTypeEntity typeClient;
 }
