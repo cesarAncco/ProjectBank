@@ -7,7 +7,7 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Product {
+public class Account {
     private Long id;
     private String typeAccount;
     private Long balance;
