@@ -9,12 +9,10 @@ import lombok.*;
 @NoArgsConstructor
 public class Product {
     private Long id;
-    private String numberAccount;
     private String typeAccount;
     private Long balance;
-    private Long transactions;
     private Long commission;
+    private Long movements;
     private String headlines;
     private String signatories;
-    private Long movements;
 }

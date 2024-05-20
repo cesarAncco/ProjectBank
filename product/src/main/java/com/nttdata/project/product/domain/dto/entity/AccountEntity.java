@@ -18,17 +18,14 @@ public class ProductEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name="number_account", nullable=false, length=255)
-    private String numberAccount;
-
     //@ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @JoinColumn(name = "type_account")
+    @Column(name="type_account")
     private String typeAccount;
+
     private Long balance;
-    private Long transactions;
     private Long commission;
+    private Long movements;
     private String headlines;
     private String signatories;
-    private Long movements;
 }

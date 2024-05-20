@@ -13,14 +13,17 @@ import javax.validation.constraints.NotBlank;
 @AllArgsConstructor
 public class ProductRequest {
 
-    @NotBlank(message = "The number account must not be empty")
-    private String numberAccount;
-
+    @NotBlank(message = "The type account must not be empty")
     private String typeAccount;
     private Long balance;
-    private Long transactions;
+
+    @NotBlank(message = "The commission must not be empty")
     private Long commission;
-    private String headlines;
-    private String signatories;
     private Long movements;
+
+    @NotBlank(message = "The headlines must not be empty")
+    private String headlines;
+
+    @NotBlank(message = "The signatories must not be empty")
+    private String signatories;
 }
