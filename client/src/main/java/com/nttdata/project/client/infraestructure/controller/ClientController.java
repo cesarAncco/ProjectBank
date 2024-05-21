@@ -8,7 +8,6 @@ import com.nttdata.project.client.application.service.ClientExternalService;
 import com.nttdata.project.client.application.service.ClientExternalServiceCustom;
 import com.nttdata.project.client.domain.dto.entity.ClientEntity;
 import com.nttdata.project.client.domain.dto.model.Client;
-import com.nttdata.project.client.infraestructure.service.IClientService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

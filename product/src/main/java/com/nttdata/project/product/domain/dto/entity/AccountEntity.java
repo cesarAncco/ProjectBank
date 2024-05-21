@@ -11,17 +11,17 @@ import javax.persistence.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "products")
+@Table(name = "accounts")
 public class AccountEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    //@ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @Column(name="type_account")
-    private String typeAccount;
+    @JoinColumn(name="type_account")
+    private AccountTypeEntity typeAccount;
 
     private Long balance;
     private Long commission;

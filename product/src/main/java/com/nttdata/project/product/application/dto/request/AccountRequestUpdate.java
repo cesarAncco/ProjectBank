@@ -11,7 +11,7 @@ import javax.validation.constraints.NotBlank;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class AccountRequest {
+public class AccountRequestUpdate {
 
     @NotBlank(message = "The type account must not be empty")
     private String typeAccount;
