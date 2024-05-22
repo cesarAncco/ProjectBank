@@ -17,6 +17,6 @@ public class CreditRequestUpdate {
     private String typeCredit;
 
     @NotBlank(message = "The credits must not be empty")
-    private Long credits;
+    private String credits;
 
 }

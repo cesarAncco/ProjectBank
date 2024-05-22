@@ -13,14 +13,14 @@ public interface CreditEntityMapper {
 
     CreditEntityMapper INSTANCE = Mappers.getMapper(CreditEntityMapper.class);
     @Mapping(target = "id", source = "id")
-    @Mapping(target = "typeCredit", source = "typeCredit")
+    @Mapping(target = "typeCredit", source = "typeCredit.creditTypeName")
     @Mapping(target = "credits", source = "credits")
     Credit mapToCredit(CreditEntity creditEntity);
 
     List<Credit> mapToCredit(List<CreditEntity> creditEntities);
 
     @Mapping(target = "id", source = "id")
-    @Mapping(target = "typeCredit", source = "typeCredit")
+    @Mapping(target = "typeCredit.id", source = "typeCredit")
     @Mapping(target = "credits", source = "credits")
     CreditEntity mapToCreditEntity(Credit credit);
 

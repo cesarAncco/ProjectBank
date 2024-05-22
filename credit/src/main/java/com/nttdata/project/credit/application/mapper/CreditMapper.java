@@ -13,7 +13,7 @@ public interface CreditMapper {
     default Credit mapToCredit(CreditRequest creditRequest) {
         return Credit.builder()
                 .typeCredit(creditRequest.getTypeCredit())
-                .credits(creditRequest.getCredits())
+                .credits(Long.parseLong(creditRequest.getCredits()))
                 .build();
     }
 
@@ -21,7 +21,7 @@ public interface CreditMapper {
         return Credit.builder()
                 .id(id)
                 .typeCredit(creditRequestUpdate.getTypeCredit())
-                .credits(creditRequestUpdate.getCredits())
+                .credits(Long.parseLong(creditRequestUpdate.getCredits()))
                 .build();
     }
 }
