@@ -24,6 +24,12 @@ management:
       exposure:
         include: "*"
 
+sonar:
+  projectKey: ClientProject
+  projectName: ClientProject
+  host:
+    url: http://localhost:9000
+
 eureka:
   client:
     serviceUrl:
