@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class AccountExternalService implements com.nttdata.project.product.application.service.AccountExternalService {
+public class AccountExternalServiceImpl implements com.nttdata.project.product.application.service.AccountExternalService {
 
     private final AccountService accountService;
 

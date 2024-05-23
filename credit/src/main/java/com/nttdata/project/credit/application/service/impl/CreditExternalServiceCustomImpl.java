@@ -1,7 +1,7 @@
 package com.nttdata.project.credit.application.service.impl;
 
+import com.nttdata.project.credit.application.service.CreditExternalService;
 import com.nttdata.project.credit.domain.dto.model.Credit;
-import com.nttdata.project.credit.domain.service.CreditService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -9,27 +9,27 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class CreditExternalService implements com.nttdata.project.credit.application.service.CreditExternalService {
+public class CreditExternalServiceCustomImpl implements com.nttdata.project.credit.application.service.CreditExternalServiceCustom {
 
-    private final CreditService creditService;
+    private final CreditExternalService creditExternalService;
 
     @Override
     public List<Credit> allCredits() {
-        return creditService.allCredits();
+        return creditExternalService.allCredits();
     }
 
     @Override
     public Credit saveCredit(Credit credit) {
-        return creditService.saveCredit(credit);
+        return creditExternalService.saveCredit(credit);
     }
 
     @Override
     public Credit updateCredit(Credit credit) {
-        return creditService.updateCredit(credit);
+        return creditExternalService.updateCredit(credit);
     }
 
     @Override
     public Credit deleteCredit(Long id) {
-        return creditService.deleteCredit(id);
+        return creditExternalService.deleteCredit(id);
     }
 }
