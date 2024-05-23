@@ -4,12 +4,9 @@ import com.nttdata.project.client.application.dto.request.ClientRequest;
 import com.nttdata.project.client.application.dto.request.ClientRequestUpdate;
 import com.nttdata.project.client.application.dto.response.ClientResponse;
 import com.nttdata.project.client.application.mapper.ClientMapper;
-import com.nttdata.project.client.application.service.ClientExternalService;
 import com.nttdata.project.client.application.service.ClientExternalServiceCustom;
-import com.nttdata.project.client.domain.dto.entity.ClientEntity;
 import com.nttdata.project.client.domain.dto.model.Client;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -35,11 +32,6 @@ public class ClientController {
     @GetMapping(value = "/client/{id}")
     public ResponseEntity<ClientEntity> findClientById(@PathVariable("id") Long id) {
         return ResponseEntity.ok(clientService.findById(id));
-    }
-
-    @GetMapping(value = "/client/{document}")
-    public ResponseEntity<ClientEntity> findClientByDocument(@PathVariable("document") String document) {
-        return ResponseEntity.ok(clientService.findByDocument(document));
     }**/
 
     @PostMapping(value = "/create")

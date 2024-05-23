@@ -1,5 +1,6 @@
 package com.nttdata.project.credit.application.service.impl;
 
+import com.nttdata.project.credit.application.service.CreditExternalService;
 import com.nttdata.project.credit.domain.dto.model.Credit;
 import com.nttdata.project.credit.domain.service.CreditService;
 import lombok.AllArgsConstructor;
@@ -9,7 +10,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class CreditExternalServiceImpl implements com.nttdata.project.credit.application.service.CreditExternalService {
+public class CreditExternalServiceImpl implements CreditExternalService {
 
     private final CreditService creditService;
 

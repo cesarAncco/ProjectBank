@@ -1,5 +1,6 @@
 package com.nttdata.project.product.application.service.impl;
 
+import com.nttdata.project.product.application.service.AccountExternalService;
 import com.nttdata.project.product.domain.dto.model.Account;
 import com.nttdata.project.product.domain.service.AccountService;
 import lombok.AllArgsConstructor;
@@ -9,7 +10,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class AccountExternalServiceImpl implements com.nttdata.project.product.application.service.AccountExternalService {
+public class AccountExternalServiceImpl implements AccountExternalService {
 
     private final AccountService accountService;
 

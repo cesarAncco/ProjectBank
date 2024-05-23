@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -33,7 +32,7 @@ public class ClientRepositoryImpl implements ClientRepository {
 
     @Override
     public Client updateClient(Client client) {
-        ClientEntity clientEntity = clientRepositoryJPA.findById(client.getId())
+        clientRepositoryJPA.findById(client.getId())
                 .orElseThrow(() -> new NoSuchElementException("Client not found."));
         return ClientEntityMapper.INSTANCE.mapToClient((
                 clientRepositoryJPA.save(ClientEntityMapper.INSTANCE.mapToClientEntity(client))

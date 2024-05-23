@@ -8,6 +8,7 @@ import javax.validation.constraints.NotBlank;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class ClientRequestUpdate {
 
     @NotBlank(message = "The name must not be empty")

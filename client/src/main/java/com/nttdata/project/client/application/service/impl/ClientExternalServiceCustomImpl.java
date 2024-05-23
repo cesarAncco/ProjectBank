@@ -1,6 +1,7 @@
 package com.nttdata.project.client.application.service.impl;
 
 import com.nttdata.project.client.application.service.ClientExternalService;
+import com.nttdata.project.client.application.service.ClientExternalServiceCustom;
 import com.nttdata.project.client.domain.dto.model.Client;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -9,7 +10,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class ClientExternalServiceCustom implements com.nttdata.project.client.application.service.ClientExternalServiceCustom {
+public class ClientExternalServiceCustomImpl implements ClientExternalServiceCustom {
 
     private final ClientExternalService clientExternalService;
 

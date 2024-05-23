@@ -1,9 +1,6 @@
 package com.nttdata.project.product.application.dto.request;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.validation.constraints.NotBlank;
 
@@ -11,6 +8,7 @@ import javax.validation.constraints.NotBlank;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class AccountRequestUpdate {
 
     @NotBlank(message = "The type account must not be empty")

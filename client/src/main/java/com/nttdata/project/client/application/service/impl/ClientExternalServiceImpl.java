@@ -1,5 +1,6 @@
 package com.nttdata.project.client.application.service.impl;
 
+import com.nttdata.project.client.application.service.ClientExternalService;
 import com.nttdata.project.client.domain.dto.model.Client;
 import com.nttdata.project.client.domain.service.ClientService;
 import lombok.AllArgsConstructor;
@@ -9,7 +10,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class ClientExternalService implements com.nttdata.project.client.application.service.ClientExternalService {
+public class ClientExternalServiceImpl implements ClientExternalService {
 
     private final ClientService clientService;
 

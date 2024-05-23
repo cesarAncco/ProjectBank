@@ -1,10 +1,7 @@
 package com.nttdata.project.client.application.dto.request;
 
 import com.nttdata.project.client.application.dto.validation.DocumentValidation;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.validation.constraints.NotBlank;
 
@@ -12,6 +9,7 @@ import javax.validation.constraints.NotBlank;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @DocumentValidation
 public class ClientRequest {
     @NotBlank(message = "The name must not be empty")
