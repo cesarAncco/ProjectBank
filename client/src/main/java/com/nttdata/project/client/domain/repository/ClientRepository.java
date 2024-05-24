@@ -4,6 +4,10 @@ import com.nttdata.project.client.domain.dto.model.Client;
 
 import java.util.List;
 
+/**
+ * ClientRepository: the interface will refer to all the methods that will be implemented
+ */
+
 public interface ClientRepository {
 
     List<Client> allClients();

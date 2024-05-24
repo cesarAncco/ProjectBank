@@ -7,6 +7,13 @@ import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import java.util.regex.Pattern;
 
+
+/**
+ * DocumentValidator class to validate the type of document to be considered
+ * case 1: for a DNI type document
+ * case 2: for a PASSPORT type document
+ * return a Pattern.matches with a regex to indicate the string to accept in the document field
+ */
 public class DocumentValidator implements ConstraintValidator<DocumentValidation, ClientRequest> {
     @Override
     public boolean isValid(ClientRequest clientRequest, ConstraintValidatorContext constraintValidatorContext) {

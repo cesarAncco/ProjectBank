@@ -6,6 +6,12 @@ import com.nttdata.project.product.domain.dto.model.Account;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
+/**
+ * AccountMapper interface to be able to map requests
+ * mapToAccount: to map from AccountRequest to Account
+ * mapToAccountUpdate: to map from AccountRequestUpdate to Account
+ */
+
 @Mapper
 public interface AccountMapper {
     AccountMapper INSTANCE = Mappers.getMapper(AccountMapper.class);

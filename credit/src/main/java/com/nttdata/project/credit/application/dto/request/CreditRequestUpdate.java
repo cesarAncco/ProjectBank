@@ -4,6 +4,11 @@ import lombok.*;
 
 import javax.validation.constraints.NotBlank;
 
+/**
+ * CreditRequestUpdate class to continue validating the fields to update data
+ * @NotBlank we indicate that the data or field cannot be empty
+ */
+
 @Getter
 @Setter
 @NoArgsConstructor

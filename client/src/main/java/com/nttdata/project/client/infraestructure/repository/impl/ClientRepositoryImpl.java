@@ -11,6 +11,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/**
+ * ClientRepositoryImpl.class for the implementation of ClientRepository
+ * The ClientRepositoryJPA is used to be able to use the basic functions of JPA, it makes it easier for us
+ */
+
 @Service
 @AllArgsConstructor
 public class ClientRepositoryImpl implements ClientRepository {

@@ -8,6 +8,12 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
+/**
+ * ClientEntityMapper interface to be able to map Entities
+ * mapToClient: to map from ClientEntity to Client
+ * mapToClientEntity: to map from Client to ClientEntity
+ */
+
 @Mapper
 public interface ClientEntityMapper {
 

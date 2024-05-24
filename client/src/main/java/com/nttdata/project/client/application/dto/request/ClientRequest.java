@@ -5,12 +5,21 @@ import lombok.*;
 
 import javax.validation.constraints.NotBlank;
 
+/**
+ * ClientRequest class to validate some fields when sending
+ */
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @DocumentValidation
+
+/**
+ * @NotBlank we indicate that the data or field cannot be empty
+ */
+
 public class ClientRequest {
     @NotBlank(message = "The name must not be empty")
     private String name;

@@ -8,6 +8,12 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
+/**
+ * CreditEntityMapper interface to be able to map Entities
+ * mapToCredit: to map from CreditEntity to Credit
+ * mapToCreditEntity: to map from Credit to CreditEntity
+ */
+
 @Mapper
 public interface CreditEntityMapper {
 

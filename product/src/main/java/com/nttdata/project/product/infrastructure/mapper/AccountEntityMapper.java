@@ -8,6 +8,12 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
+/**
+ * AccountEntityMapper interface to be able to map Entities
+ * mapToAccount: to map from AccountEntity to Account
+ * mapToAccountEntity: to map from Account to AccountEntity
+ */
+
 @Mapper
 public interface AccountEntityMapper {
 

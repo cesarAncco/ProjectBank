@@ -2,6 +2,10 @@ package com.nttdata.project.credit.domain.dto.model;
 
 import lombok.*;
 
+/**
+ * Credit.class to be used as a model
+ */
+
 @Getter
 @Setter
 @Builder

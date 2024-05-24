@@ -4,6 +4,10 @@ import com.nttdata.project.credit.domain.dto.model.Credit;
 
 import java.util.List;
 
+/**
+ * CreditService: interface to reference all the methods to be implemented
+ */
+
 public interface CreditService {
 
     List<Credit> allCredits();

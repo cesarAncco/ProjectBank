@@ -6,6 +6,12 @@ import com.nttdata.project.credit.domain.dto.model.Credit;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
+/**
+ * CreditMapper interface to be able to map requests
+ * mapToCredit: to map from CreditRequest to Credit
+ * mapToCreditUpdate: to map from CreditRequestUpdate to Credit
+ */
+
 @Mapper
 public interface CreditMapper {
     CreditMapper INSTANCE = Mappers.getMapper(CreditMapper.class);

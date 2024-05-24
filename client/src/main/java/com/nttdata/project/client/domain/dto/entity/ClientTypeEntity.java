@@ -4,6 +4,13 @@ import lombok.*;
 
 import javax.persistence.*;
 
+/**
+ * ClientTypeEntity.class to be able to give reference to the type of client to be entered
+ * @Id: we indicate that the data will be the id in the database.
+ * @GenerateValue: to generate the id with an IDENTITY strategy
+ * @Column: to indicate the characteristics of the column in the table
+ */
+
 @Entity
 @Getter
 @Setter

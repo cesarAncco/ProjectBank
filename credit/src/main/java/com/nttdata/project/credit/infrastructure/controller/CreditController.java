@@ -14,6 +14,15 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
+/**
+ * @RestController: Indicates that the class is a Spring MVC controller
+ * @RequestMapping: This annotation is used to map web requests.
+ * @GetMapping: GET method to contain a list of clients
+ * @PostMapping: POST method for creating clients
+ * @PutMapping: PUT method for updating clients
+ * @DeleteMapping: DELTE method to delete a client
+ */
+
 @RestController
 @RequestMapping(value = "api/credit")
 @AllArgsConstructor

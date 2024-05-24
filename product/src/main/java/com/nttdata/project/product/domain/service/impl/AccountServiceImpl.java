@@ -8,6 +8,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * AccountServiceImpl.class in this class we are going to implement all the methods of the interface.
+ * @Service: we indicate that this class will be a service
+ * We use the AccountRepository interface to use its methods in the service
+ */
+
 @Service
 @AllArgsConstructor
 public class AccountServiceImpl implements AccountService {

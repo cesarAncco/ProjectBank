@@ -4,11 +4,20 @@ import lombok.*;
 
 import javax.validation.constraints.NotBlank;
 
+/**
+ * ClientRequestUpdate class to continue validating the fields to update data
+ */
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+
+/**
+ * @NotBlank we indicate that the data or field cannot be empty
+ */
+
 public class ClientRequestUpdate {
 
     @NotBlank(message = "The name must not be empty")

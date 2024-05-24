@@ -6,6 +6,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 
+/**
+ * ExceptionHandler.class to be able to control exceptions when performing an action
+ * return a ResponseEntity with the form of ClientResponse
+ */
+
 @ControllerAdvice
 public class ExceptionHandler {
 

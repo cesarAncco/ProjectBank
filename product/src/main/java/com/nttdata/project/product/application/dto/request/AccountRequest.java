@@ -4,11 +4,20 @@ import lombok.*;
 
 import javax.validation.constraints.NotBlank;
 
+/**
+ * AccountRequest class to validate some fields when sending
+ */
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+
+/**
+ * @NotBlank we indicate that the data or field cannot be empty
+ */
+
 public class AccountRequest {
 
     @NotBlank(message = "The type account must not be empty")

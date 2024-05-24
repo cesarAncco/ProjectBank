@@ -4,6 +4,10 @@ import com.nttdata.project.client.domain.dto.model.Client;
 
 import java.util.List;
 
+/**
+ * In ClientExternalService we place functions so that we can later implement them
+ */
+
 public interface ClientExternalService {
 
     List<Client> allClients();

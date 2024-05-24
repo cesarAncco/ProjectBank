@@ -2,6 +2,10 @@ package com.nttdata.project.client.domain.dto.model;
 
 import lombok.*;
 
+/**
+ * Client.class to be used as a model
+ */
+
 @Getter
 @Setter
 @Builder

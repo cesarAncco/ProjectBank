@@ -8,6 +8,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * We implement the methods that we place in the interface
+ * @Service: we instantiate that this class is a service
+ * We use the AccountExternalService to be able to use its methods
+ */
+
 @Service
 @AllArgsConstructor
 public class AccountExternalServiceCustomImpl implements AccountExternalServiceCustom {

@@ -8,6 +8,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * We implement the methods that were placed in the ClientExternalService interface
+ * @Service: we instantiate that this class is a service
+ * The ClientService is used to be able to use its functions
+ */
+
 @Service
 @AllArgsConstructor
 public class ClientExternalServiceImpl implements ClientExternalService {

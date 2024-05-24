@@ -6,6 +6,12 @@ import com.nttdata.project.client.domain.dto.model.Client;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
+/**
+ * ClientMapper interface to be able to map requests
+ * mapToClient: to map from ClientRequest to Client
+ * mapToClientUpdate: to map from ClientRequestUpdate to Client
+ */
+
 @Mapper
 public interface ClientMapper {
     ClientMapper INSTANCE = Mappers.getMapper(ClientMapper.class);

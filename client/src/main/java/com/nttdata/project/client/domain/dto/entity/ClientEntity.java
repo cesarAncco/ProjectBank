@@ -5,6 +5,17 @@ import lombok.*;
 
 import javax.persistence.*;
 
+/**
+ * ClientEntity.class we indicate all the fields to be able to create a Client
+ * @Entity: we indicate that it is an entity
+ * @Table: we indicate the reference to the table in the database.
+ * @Id: we indicate that the data will be the id in the database.
+ * @GenerateValue: to generate the id with an IDENTITY strategy
+ * @Column: to indicate the characteristics of the column in the table
+ * @ManyToOne: To define a many-to-one relationship in JPA.
+ * @JoinColumn: Specify the database column to use
+ */
+
 @Entity
 @Getter
 @Setter
